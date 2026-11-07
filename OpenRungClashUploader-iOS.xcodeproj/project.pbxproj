@@ -1,0 +1,55 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* OpenRungClashUploaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* OpenRungClashUploaderApp.swift */; };
+		A10000000000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* AppModel.swift */; };
+		A10000000000000000000003 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* RootView.swift */; };
+		A10000000000000000000004 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* KeychainStore.swift */; };
+		A10000000000000000000005 /* OpenRungBrokerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* OpenRungBrokerService.swift */; };
+		A10000000000000000000006 /* FTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* FTPClient.swift */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* OpenRungClashUploaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRungClashUploaderApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* OpenRungBrokerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRungBrokerService.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* FTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPClient.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30000000000000000000001 /* OpenRungClashUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenRungClashUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		A50000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		A60000000000000000000001 = {isa = PBXGroup; children = (A60000000000000000000002 /* Sources */, A60000000000000000000003 /* Products */); sourceTree = "<group>"; };
+		A60000000000000000000002 /* Sources */ = {isa = PBXGroup; path = OpenRungClashUploader-iOS; sourceTree = "<group>"; children = (A20000000000000000000001, A20000000000000000000002, A20000000000000000000003, A20000000000000000000004, A20000000000000000000005, A20000000000000000000006, A20000000000000000000007); };
+		A60000000000000000000003 /* Products */ = {isa = PBXGroup; name = Products; children = (A30000000000000000000001); sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		A70000000000000000000001 /* OpenRungClashUploader-iOS */ = {isa = PBXNativeTarget; buildConfigurationList = A80000000000000000000002; buildPhases = (A50000000000000000000002, A50000000000000000000001, A50000000000000000000003); buildRules = (); dependencies = (); name = "OpenRungClashUploader-iOS"; productName = OpenRungClashUploader; productReference = A30000000000000000000001; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1420; TargetAttributes = {A70000000000000000000001 = {CreatedOnToolsVersion = 14.2; }; }; }; buildConfigurationList = A80000000000000000000001; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A60000000000000000000001; productRefGroup = A60000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A70000000000000000000001); };
+/* End PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+		A50000000000000000000002 /* Sources Build Phase */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000003, A10000000000000000000004, A10000000000000000000005, A10000000000000000000006); runOnlyForDeploymentPostprocessing = 0; };
+		A50000000000000000000003 /* Resources Build Phase */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.2; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+		AA0000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 16.2; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+		AA0000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = OpenRungClashUploader-iOS/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = org.openrung.clashuploader; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		AA0000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = OpenRungClashUploader-iOS/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = org.openrung.clashuploader; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		A80000000000000000000001 /* Project configuration list */ = {isa = XCConfigurationList; buildConfigurations = (AA0000000000000000000001, AA0000000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A80000000000000000000002 /* Build configuration list for PBXNativeTarget */ = {isa = XCConfigurationList; buildConfigurations = (AA0000000000000000000003, AA0000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}
