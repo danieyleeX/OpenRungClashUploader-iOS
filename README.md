@@ -13,6 +13,6 @@
 
 ## 打开
 
-在 Mac 上用 Xcode 打开 `OpenRungClashUploader-iOS.xcodeproj`，选择 iPhone 14 Plus 运行。最低部署版本设为 iOS 16.2。
+在 Mac 上用 Xcode 14.2 打开 `OpenRungClashUploader-iOS.xcodeproj`。项目使用 Swift 5 语言模式和 iOS 16.2 部署目标，系统框架调用限制在 Xcode 14.2 / iOS 16.2 SDK 范围内。
 
-此工作环境没有 macOS/Xcode，因此尚未在 Xcode 中编译或连接 FTP/Broker 实测。FTP 是明文 FTP 协议；服务器需允许被动模式（EPSV）。
+当前开发环境没有 macOS/Xcode，因此尚未在 Xcode 中编译或连接 FTP/Broker 实测。Xcode 14.2 自带的设备支持无法直接调试 iOS 27.2 的 iPhone；要在这台手机上运行调试仍需新版 Xcode。FTP 是明文 FTP 协议；服务器需允许被动模式（EPSV/PASV）。
