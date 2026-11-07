@@ -180,7 +180,7 @@ final class FTPClient: @unchecked Sendable {
     }
 
     private func waitUntilReady(_ connection: NWConnection) async throws {
-        try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
             var resumed = false
             connection.stateUpdateHandler = { state in
                 guard !resumed else { return }
@@ -212,7 +212,7 @@ final class FTPClient: @unchecked Sendable {
     }
 
     private func send(_ data: Data, on connection: NWConnection) async throws {
-        try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) in
             connection.send(content: data, completion: .contentProcessed { error in
                 if let error { continuation.resume(throwing: error) }
                 else { continuation.resume() }
@@ -259,7 +259,7 @@ final class FTPClient: @unchecked Sendable {
     }
 
     private func receiveChunk(on connection: NWConnection) async throws -> (Data, Bool) {
-        try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<(Data, Bool), Error>) in
             connection.receive(minimumIncompleteLength: 1, maximumLength: 64 * 1024) { data, _, complete, error in
                 if let error { continuation.resume(throwing: error) }
                 else { continuation.resume(returning: (data ?? Data(), complete)) }
